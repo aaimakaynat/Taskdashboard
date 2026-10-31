@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Interactive Task Dashboard</h1>
+    <form id="taskForm" class="task-form">
+      <input type="text" id="titleInput" placeholder="New task title" required>
+      <select id="statusInput">
+        <option value="pending">Pending</option>
+        <option value="in-progress">In Progress</option>
+        <option value="done">Done</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
